@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olympus Colony Timeline 2025-2125</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #e6e6e6;
+        overflow: hidden;
+    }
+    #slideshow-container {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide {
+        display: none;
+        width: 90%;
+        max-width: 1200px;
+        height: 85%;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 40px;
+        box-sizing: border-box;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        overflow-y: auto;
+    }
+    .slide.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .slide-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    .slide-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #ffd700;
+        margin: 0;
+    }
+    .slide-number {
+        font-size: 1.2em;
+        color: #aaa;
+    }
+    .slide-content {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+    .slide-image {
+        width: 100%;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1.2em;
+        border: 2px dashed rgba(255, 255, 255, 0.1);
+    }
+    .slide-text {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+    .slide-text ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    .slide-text li {
+        margin-bottom: 15px;
+    }
+    .slide-text strong {
+        color: #ffd700;
+    }
+    .navigation {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+    }
+    button {
+        padding: 12px 30px;
+        font-size: 1em;
+        background: rgba(255, 215, 0, 0.1);
+        color: #ffd700;
+        border: 1px solid #ffd700;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    button:hover {
+        background: rgba(255, 215, 0, 0.3);
+        transform: scale(1.05);
+    }
+    button:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+    .full-width {
+        grid-column: 1 / -1;
+    }
+    @media (max-width: 768px) {
+        .slide-content {
+            grid-template-columns: 1fr;
+        }
+        .slide-title {
+            font-size: 1.8em;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div id="slideshow-container">
+    
+    <!-- Slide 1: Title -->
+    <div class="slide active">
+        <div class="slide-header full-width">
+            <h1 class="slide-title">Olympus Colony: A Martian Chronicle</h1>
+            <span class="slide-number">1 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-text" style="text-align: center;">
+                <h2>The Path to Mars Independence</h2>
+                <p><strong>2025 - 2125</strong></p>
+                <p>A century of colonization, oppression, and liberation</p>
+                <img src="img_olimpus/img1.jpg" alt="Title Image" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px; margin-top: 30px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Foundation (2025-2048) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">Foundation & Early Years</h2>
+            <span class="slide-number">2 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-image">
+                <img src="img_olimpus/img2.jpg" alt="Early Colony" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2025:</strong> Humanity arrives at Mars and establishes Olympus Colony with 20 inhabitants as a collective effort by global space agencies (SUA).</li>
+                    <li><strong>2030:</strong> First Martian-born human, Astreus Astley, son of astronaut Paul Astley (UK) and biologist Agatha Santos (Brazil).</li>
+                    <li><strong>2037:</strong> Tourism begins ($50K round trip); Olympus Sky Palace hotel opens with 100 luxury rooms.</li>
+                    <li><strong>2042:</strong> Population reaches 1,000 inhabitants.</li>
+                    <li><strong>2047-2053:</strong> "Climate Wars" erupt on Earth due to resource scarcity.</li>
+                    <li><strong>2048:</strong> Olympus reaches 10,000 inhabitants and becomes a city under the Space Union Agency (SUA).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Growth & Earth Crisis (2049-2070) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">Growth & Earth Crisis</h2>
+            <span class="slide-number">3 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2053:</strong> World Government created; nation-states retain autonomy; Project Gaia (terraforming research) begins under SUA.</li>
+                    <li><strong>2060:</strong> Olympus reaches 100K inhabitants; Mars offers better opportunities than poverty-stricken Earth regions.</li>
+                    <li><strong>2061:</strong> Astreus returns to Mars; Paul Astley retires; Amanda Maikov becomes scientific leader.</li>
+                    <li><strong>2065:</strong> First generation shows physical/cultural differences; racial tensions emerge (20% Martian-born, 72% adult immigrants).</li>
+                    <li><strong>2069:</strong> Olympus reaches 200K; Astreus becomes leader defending Martian rights against "martianophobes."</li>
+                    <li><strong>2070:</strong> Astreus declares: "Our planet is Mars, our city is Olympus."</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="img_olimpus/img3.jpg" alt="Earth Crisis" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Earth Oppression (2071-2084) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">The Terraquean Occupation</h2>
+            <span class="slide-number">4 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-image">
+                <img src="img_olimpus/img4.jpg" alt="Occupation" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2077:</strong> Earth Government dissolves nation-states; Mars loses autonomous "nation-state" status.</li>
+                    <li><strong>2079:</strong> Earth military occupies Olympus; protests erupt.</li>
+                    <li><strong>2081:</strong> Marcian Action (MA) party begins armed resistance.</li>
+                    <li><strong>2082:</strong> Amanda Maikov arrested for supporting MA, dies in custody (alleged suicide) at age 66.</li>
+                    <li><strong>2083:</strong> Astreus (53) publicly confesses involvement, sentenced to 15 years on Earth. His famous words: "My crime was loving Mars and its people too much."</li>
+                    <li><strong>2084:</strong> SUA dissolved, merged into Earth Space Agency (ESA); resistance crushed.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: The Resistance (2085-2094) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">The Peaceful Resistance</h2>
+            <span class="slide-number">5 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2088:</strong> Stela Astley (Astreus's daughter) founds "Marcian Freedom" (MF) party on Earth.</li>
+                    <li><strong>2090:</strong> MF wins 3% of Earth Congress, 9% on Mars.</li>
+                    <li><strong>2093:</strong> Mass protests demand autonomy and Astreus's release; Selena (first "Selenita") joins the cause.</li>
+                    <li><strong>2094:</strong> Astreus released at age 63 after 11 years imprisonment.</li>
+                    <li><strong>2095:</strong> Astreus elected President of Mars in first round at age 65; Earth military withdraws.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="img_olimpus/img5.jpg" alt="Resistance" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Independence Achieved (2096-2103) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">Independence Achieved</h2>
+            <span class="slide-number">6 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-image">
+                <img src="img_olimpus/img6.jpg" alt="Independence" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2096:</strong> Mars regains nation-state status; terraforming deadline extended to 2112.</li>
+                    <li><strong>2099:</strong> Full independence ratified; Marcian Space Agency (MSA) created.</li>
+                    <li><strong>2100:</strong> Mars population: 1.1M (Olympus 900K, Cydonia 200K). Trade balance fixed at max equality (39/61).</li>
+                    <li><strong>2103:</strong> Vladimir Maikov (Amanda's son) elected Mars President; honors his mother, promises justice for "Terraquean Occupation" victims.</li>
+                    <li>Lunar colony "Luara" reaches 200K; Selena (32) founds "Selenitian Democracy" (SD) party.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Terraforming & Expansion (2104-2112) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">Terraforming & Expansion</h2>
+            <span class="slide-number">7 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2106:</strong> Mars terraforming completion announced for 2112; trials for "Terraquean Occupation" crimes begin.</li>
+                    <li><strong>2107:</strong> Selena (36) elected Lunar President; SD wins.</li>
+                    <li><strong>2110:</strong> Mars fully terraformed! Domes opened; atmosphere stabilized; moss and plants spread across planet.</li>
+                    <li><strong>2111:</strong> Astreus Astley dies of natural causes at 81; his daughter Stela present.</li>
+                    <li><strong>2112:</strong> 30-meter statue of Astreus unveiled at Martian Freedom Square with bronze plaques honoring occupation victims.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="img_olimpus/img7.jpg" alt="Terraforming" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: The Earth Empire (2113-2120) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">The Earth Empire Era</h2>
+            <span class="slide-number">8 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-image">
+                <img src="img_olimpus/img8.jpg" alt="Earth Empire" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2113:</strong> Mars achieves independent military, ends relations with Earth Empire.</li>
+                    <li><strong>2115:</strong> Selena (44) leaves Lunar presidency; remains SD party leader.</li>
+                    <li><strong>2120:</strong> "Earth Empire" formally established; Luna and Venus included as special "planet-states."</li>
+                    <li>Luna: Luara 800K, Luana 50K; Mars: Olympus 1.1M, Cydonia 400K; Venus: Venera 10K.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Legacy & Future (2121-2125) -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">Legacy & Future</h2>
+            <span class="slide-number">9 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <ul>
+                    <li><strong>2125:</strong> 100th anniversary of Mars landing celebrated.</li>
+                    <li><strong>Population Milestones:</strong>
+                        <ul>
+                            <li>Olympus: 5M inhabitants</li>
+                            <li>Cydonia: 1.5M</li>
+                            <li>Luna: 1.1M</li>
+                            <li>Venus (Venera): 200K</li>
+                        </ul>
+                    </li>
+                    <li><strong>2125:</strong> Stela Astley (68) retires from politics, returns to Mars as professor at Olimpus University.</li>
+                    <li><strong>2125:</strong> Selena (54) begins second term as Lunar President.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="img_olimpus/img9.jpg" alt="Future" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Conclusion -->
+    <div class="slide">
+        <div class="slide-header full-width">
+            <h2 class="slide-title">The Martian Dream</h2>
+            <span class="slide-number">10 / 10</span>
+        </div>
+        <div class="slide-content">
+            <div class="slide-text" style="text-align: center;">
+                <h3>From Colony to Nation</h3>
+                <p>A story of identity, resistance, and self-determination spanning 100 years.</p>
+                <br>
+                <h3>Key Themes:</h3>
+                <p>Colonial oppression • Cultural identity • Civil rights • Interplanetary governance • Legacy of resistance</p>
+                <br>
+                <img src="img_olimpus/img10.jpg" alt="Conclusion" style="width: 100%; max-width: 700px; height: auto; border-radius: 10px;">
+                <br><br>
+                <p><em>"My crime was and always will be loving Mars and its people too much."</em><br>
+                — Astreus Astley, 2083</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="navigation">
+    <button id="prevBtn" onclick="changeSlide(-1)">Previous</button>
+    <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add('active');
+        
+        // Update button states
+        document.getElementById('prevBtn').disabled = currentSlide === 0;
+        document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        
+        // Update slide numbers
+        const slideNumbers = document.querySelectorAll('.slide-number');
+        slideNumbers.forEach((num, index) => {
+            num.textContent = `${index + 1} / ${totalSlides}`;
+        });
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') changeSlide(-1);
+        if (e.key === 'ArrowRight') changeSlide(1);
+    });
+
+    // Initialize
+    showSlide(0);
+</script>
+
+</body>
+</html>
